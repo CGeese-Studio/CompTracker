@@ -1,2 +1,0 @@
-# CompTracker
-Compensation Tracker
