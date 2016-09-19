@@ -1,10 +1,10 @@
-// combines all code snipets to test functionality
-// declare variables at program start, finished product will accept user input for these values
+// Declare program run variables, position, quota, acts, and accy can be edited to test fuctionality
 var position = "LRC"
 var quota = 20.0
-var multiplier = 0.0
 var acts = 0.0
 var accy = 0.0
+// Do not edit these variables
+var multiplier = 0.0
 var percentToGoal = acts/quota
 var fullComp = 0.0
 var actTic = 0.0
