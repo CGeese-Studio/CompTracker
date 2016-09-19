@@ -2,8 +2,8 @@
 import Foundation
 var position = "LRC"
 var quota = 20.0
-var acts = 10.0
-var accy = 1031.25
+var acts = 0.0
+var accy = 0.0
 // Do not edit these variables
 var multiplier = 0.0
 var percentToGoal = acts/quota
