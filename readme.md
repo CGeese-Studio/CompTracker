@@ -7,6 +7,7 @@
   3. Functionality to lock multiplier at 1.0 for quotas less than ten is working.
   4. Now returns difference between current attainment and goal values.
   5. Prints percent to goal based on both Activation and Accessory attainment.
+  6. Now accurately rounds results to 2 decimal places.
 
 ---
 ### compTrackrer.swift houses the entire project codebase.  
@@ -16,5 +17,5 @@ Modifying the starting values of position, quota, acts and accy will output comp
   2. Quota tells the program what your sales goal is for activations, used for multiplier and activation payouts.  
   3. Acts tells the program how many activations you currently haveto date.  
   4. Accy tells the program what you have sold in accessories to date.  
-  
+
 ---
