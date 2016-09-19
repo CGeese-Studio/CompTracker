@@ -35,7 +35,7 @@ print("Your full Commission should be: $\(fullComp)")
 print("Your Activations comp should be: $\(actTic)")
 print("Your Accessory comp should be: $\(accyTic)")
 print("With an Accessory goal of: $\(accyGoal)")
-// multiplier control flow, multiplier is determined by quota attainment 
+// multiplier control flow, multiplier is determined by quota attainment
 // A quota of <10 locks the multiplier at 1.0 for anything above 100%
 if (quota >= 10.0){
 	switch percentToGoal {
@@ -98,3 +98,4 @@ if accy < accyGoal {
 } else {
     print("You are currently $\(accy-accyGoal) over your target.")
 }
+print("You are now \(totalComp/fullComp*100)% to goal.")
