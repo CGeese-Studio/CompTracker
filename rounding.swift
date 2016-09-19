@@ -1,3 +1,9 @@
+//Best yet
+round(1000 * x) / 1000
+//Example
+var a = 123.4567
+print(round(1000 * a) / 1000)
+
 // Method 1
 extension Double {
     /// Rounds the double to decimal places value
