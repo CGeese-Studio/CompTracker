@@ -7,6 +7,6 @@ extension Double {
 }
 
 
- Example which returns Double rounded to 4 decimal places:
+// Example which returns Double rounded to 4 decimal places:
 let x = Double(0.123456789).roundToPlaces(4)  // x becomes 0.1235 under Swift 2
 let x = Double(0.123456789).roundTo(places: 4)  // Swift 3 version
