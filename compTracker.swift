@@ -1,8 +1,9 @@
-// Declare program run variables, position, quota, acts, and accy can be edited to test fuctionality
+// Declare program run variables, position, quota, acts, and accy can be edited to test functionality
+import Foundation
 var position = "LRC"
 var quota = 20.0
-var acts = 0.0
-var accy = 0.0
+var acts = 10.0
+var accy = 1031.25
 // Do not edit these variables
 var multiplier = 0.0
 var percentToGoal = acts/quota
@@ -74,15 +75,15 @@ if (quota >= 10.0){
 print("Your current multiplier is: \(multiplier)")
 // calculates payout amounts bases on user input, the print statemts are placeholders to test proper calculations
 var actPayout = (multiplier*actTic*percentToGoal)
-print("your current activation payout: $\(actPayout)")
+print("your current activation payout: $\((round(100 * actPayout) / 100))")
 var accyPayout = (accy*0.06)
-print("Your current Accessory payout: $\(accyPayout)")
+print("Your current Accessory payout: $\((round(100 * accyPayout) / 100))")
 var totalComp = (actPayout+accyPayout)
-print("Your current commission totals: $\(totalComp)")
+print("Your current commission totals: $\((round(100 * totalComp) / 100))")
 var taxPaid = (totalComp*0.34)
-print("Money the Federal Government is taking: $\(taxPaid)")
+print("Money the Federal Government is taking: $\((round(100 * taxPaid) / 100))")
 var compPaid = (totalComp-taxPaid)
-print("You will take home: $\(compPaid)")
+print("You will take home: $\((round(100 * compPaid) / 100))")
 //will compare current values to goals and provide the difference as a target
 if acts < quota {
   print("You currently need \(quota-acts) to hit your activation goal.")
@@ -98,4 +99,5 @@ if accy < accyGoal {
 } else {
     print("You are currently $\(accy-accyGoal) over your target.")
 }
-print("You are now \(totalComp/fullComp*100)% to goal.")
+var attainment = ((totalComp / fullComp) * 100)
+print("You are now \((round(attainment * 100) / 100))% to goal.")
