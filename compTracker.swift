@@ -99,5 +99,14 @@ if accy < accyGoal {
 } else {
     print("You are currently $\(accy-accyGoal) over your target.")
 }
+// prints a rounded percent to goal statement 
 var attainment = ((totalComp / fullComp) * 100)
 print("You are now \((round(attainment * 100) / 100))% to goal.")
+// morale boosting is great 
+if attainment > 1.0 {
+      print("Congratulations you have reached a full commission check.")
+} else {
+      print("You aren't quite there yet, keep up the good work.")
+}
+
+      
