@@ -80,7 +80,7 @@ if (quota >= 10.0){
       multiplier = 0.0
   }
 }
-// Declaure variable for Sprint Promoter Score
+// Declare variable for Sprint Promoter Score
 var sps: Double = 0.0
 // Declare variables for taxes and payouts accounting for SPS 10% decelerator
 var actPayout: Double = (actTic * percentToGoal * multiplier)
