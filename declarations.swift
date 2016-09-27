@@ -1,4 +1,5 @@
 // running list of known constants and variables
+// The main compTracker file will eventually be updated to use these variables 
 var newActs: Double = 0.0 //New Activations
 var upgrade: Double = 0.0 //Upgrade Activations
 var tablet: Double = 0.0 //Tablet Activations
