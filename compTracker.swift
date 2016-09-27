@@ -1,10 +1,11 @@
-// combines all code snipets to test functionality
-// declare variables at program start, finished product will accept user input for these values
+// Declare program run variables, position, quota, acts, and accy can be edited to test functionality
+import Foundation
 var position = "LRC"
 var quota = 20.0
-var multiplier = 0.0
 var acts = 0.0
 var accy = 0.0
+// Do not edit these variables
+var multiplier = 0.0
 var percentToGoal = acts/quota
 var fullComp = 0.0
 var actTic = 0.0
@@ -35,7 +36,7 @@ print("Your full Commission should be: $\(fullComp)")
 print("Your Activations comp should be: $\(actTic)")
 print("Your Accessory comp should be: $\(accyTic)")
 print("With an Accessory goal of: $\(accyGoal)")
-// multiplier control flow, multiplier is determined by quota attainment 
+// multiplier control flow, multiplier is determined by quota attainment
 // A quota of <10 locks the multiplier at 1.0 for anything above 100%
 if (quota >= 10.0){
 	switch percentToGoal {
@@ -74,15 +75,15 @@ if (quota >= 10.0){
 print("Your current multiplier is: \(multiplier)")
 // calculates payout amounts bases on user input, the print statemts are placeholders to test proper calculations
 var actPayout = (multiplier*actTic*percentToGoal)
-print("your current activation payout: $\(actPayout)")
+print("your current activation payout: $\((round(100 * actPayout) / 100))")
 var accyPayout = (accy*0.06)
-print("Your current Accessory payout: $\(accyPayout)")
+print("Your current Accessory payout: $\((round(100 * accyPayout) / 100))")
 var totalComp = (actPayout+accyPayout)
-print("Your current commission totals: $\(totalComp)")
+print("Your current commission totals: $\((round(100 * totalComp) / 100))")
 var taxPaid = (totalComp*0.34)
-print("Money the Federal Government is taking: $\(taxPaid)")
+print("Money the Federal Government is taking: $\((round(100 * taxPaid) / 100))")
 var compPaid = (totalComp-taxPaid)
-print("You will take home: $\(compPaid)")
+print("You will take home: $\((round(100 * compPaid) / 100))")
 //will compare current values to goals and provide the difference as a target
 if acts < quota {
   print("You currently need \(quota-acts) to hit your activation goal.")
@@ -98,3 +99,12 @@ if accy < accyGoal {
 } else {
     print("You are currently $\(accy-accyGoal) over your target.")
 }
+// prints a rounded percent to goal statement 
+var attainment = ((totalComp / fullComp) * 100)
+print("You are now \((round(attainment * 100) / 100))% to goal.")
+// morale boosting is great 
+if attainment >= 100.0 {
+      print("Congratulations you have reached a full commission check.")
+} else {
+      print("You aren't quite there yet, keep up the good work.")
+}     
