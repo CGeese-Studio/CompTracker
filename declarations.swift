@@ -1,7 +1,7 @@
 // running list of known constants and variables
-var newActs: Double = 0.0//New Activations 
-var upgrade: Double = 0.0//Upgrade Activations
-var tablet: Double = 0.0 //Tablet Activations 
+var newActs: Double = 0.0 //New Activations
+var upgrade: Double = 0.0 //Upgrade Activations
+var tablet: Double = 0.0 //Tablet Activations
 var prepaid: Double = 0.0 //Prepaid Activations
 var spc: Double = 0.0 //Sprint Phone Connect Activations
 var mbb: Double = 0.0 //Mobile BroadBand Activations
