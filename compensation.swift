@@ -1,4 +1,3 @@
-// Placeholder for an updated comptracker script
 // Import Foundation for functions
 import Foundation
 // Declare position and quota
