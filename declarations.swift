@@ -30,3 +30,4 @@ let netPayout: Double = (grossPayout - taxPaid) // Comp amount after taxes ($ cu
 let decelPayout: Double = (grossPayout * 0.90) // Applies 10% decelerator for poor SPS performance
 let decelTaxPaid: Double = (delecPayout * tax) // figures out tax paid for a decelerated comp
 let netDecelPayout: Double = (decelPayout - decelTaxPaid) // Figures net Comp for decelerated payout
+// test new line addition
