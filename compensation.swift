@@ -1,9 +1,12 @@
 // Import Foundation for functions
+// SEARCH THE WORD EDIT TO FIND ALL VALUES USED FOR TESTING, DO NOT MODIFY ANYTHING THAT ISNT COMMENTED AS "EDIT FOR TESTING"
 import Foundation
 // Declare position and quota
+// Edit position and quota for testing
 var position: String = ""
 var quota: Double = 0.0
 // Declare variables for each activation type
+// Edit all activations for testing
 var newActs: Double = 0.0
 var upgrade: Double = 0.0
 var tablet: Double = 0.0
@@ -13,15 +16,17 @@ var mbb: Double = 0.0
 // Declare variables for total activation count, values and percent to goal
 var totalActs: Double = (newActs + upgrade + tablet + prepaid + spc + mbb)
 var actValue: Double = (newActs) + ((upgrade + tablet + prepaid + spc + mbb) * 0.75)
-var percentToGoal: Double = (totalActs / quota)
+var percentToGoal: Double = (actValue / quota)
 // Declare variabes for new activation and tablet percentage
 var newMix: Double = (newActs / totalActs)
 var tabMix: Double = (tablet / totalActs)
 // Declare variables for TEP attachment
+// Edit tep for testing
 var tep: Double = 0.0
 var tepOpp: Double = totalActs
-var tepAttach: Double = (tepOpp / tep)
+var tepAttach: Double = (tep / tepOpp)
 // Declare variable for accessory sales total
+// Edit accy for testing
 var accy: Double = 0.0
 // Declare variable for Accessory Per Handset average
 var aph: Double = (accy / totalActs)
@@ -80,6 +85,7 @@ if (quota >= 10.0){
   }
 }
 // Declare variable for Sprint Promoter Score
+// Edit sps for testing
 var sps: Double = 0.0
 // Declare variables for taxes and payouts accounting for SPS 10% decelerator
 var actPayout: Double = (actTic * percentToGoal * multiplier)
@@ -101,4 +107,27 @@ if (sps >= 76.0) {
   decelTaxPaid = (decelGrossPayout * tax)
   decelNetPayout = (decelGrossPayout - decelTaxPaid)
 }
-// Add statements to test proper functionality
+// Add statements to test proper functionality, TODO: add round function for percentages and currencies
+print("As a(n) \(position), you have a commission target of $\(fullComp).")
+print("Of that target $\(actTic) is comprised of activations and $\(accTic) is comprised of accessory sales.")
+print("You have an accessory sales goal of $\(accGoal).")
+if (quota >= 10) {
+  print("With a quota of \(quota), you are eligible for incentive multipliers.")
+} else {
+  print("With a quota of \(quota), you are not eligible for incentive multipliers.")
+}
+print("Your current activations total \(totalActs), with a compensations value of \(actValue).")
+print("Bringing you \(percentToGoal)% to goal totaling $\(actPayout) towards compensation.")
+print("Of those activations your TEP attachment rate is \(tepAttach)%.")
+print("Your current incentive multiplier is \(multiplier).")
+print("Of those activations \(newMix)% are Gross New Adds and \(tabMix)% are tablets.")
+print("You are currently at $\(accy) in accessory sales which is \(accy / accGoal)% to goal.")
+print("Totaling $\(accPayout) towards your compensation.")
+print("Your current APH is $\(aph).")
+if (sps >= 76.0) {
+  print("Bassed on your SPS of \(sps), you do not have a 10% decelerated payout.")
+  print("Your total Gross Payout is $\(grossPayout), after $\(taxPaid) is taken out in taxes you will take home $\(netPayout).")
+} else {
+  print("Because your SPS is less than the target 76% your compensation is decelerated by 10%.")
+  print("Your total Gross Payout is $\(decelGrossPayout), after $\(decelTaxPaid) is taken out in taxes you will take home $\(decelNetPayout)")
+}
