@@ -18,5 +18,6 @@ Modifying the starting values of position, quota, acts (each category) and accy 
   2. Quota tells the program what your sales goal is for activations, used for multiplier and activation payouts.  
   3. Acts tells the program how many activations you currently haveto date.  
   4. Accy tells the program what you have sold in accessories to date.  
-  5. Every variable that can be edited for testing is documented with line comment. 
+	5. Every variable that can be edited for testing is documented with line comment. 
+	
 ---
