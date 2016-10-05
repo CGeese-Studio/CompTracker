@@ -1,5 +1,5 @@
-// Import Foundation for functions
 // SEARCH THE WORD EDIT TO FIND ALL VALUES USED FOR TESTING, DO NOT MODIFY ANYTHING THAT ISNT COMMENTED AS "EDIT FOR TESTING"
+// Import Foundation for function support
 import Foundation
 // Declare position and quota
 // Edit position and quota for testing
