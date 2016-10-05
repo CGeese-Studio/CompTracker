@@ -15,7 +15,7 @@
 Copying this files contents into a swift compiler will print the values of all compensation related variables.  
 Modifying the starting values of position, quota, acts (each category) and accy will output comp statements for the values entered.  
   1. Position sets the apropriate incentive compensation values for compiling.  
-  2. Quota tells the program what your sales goal is for activations, used for multiplier and activation payouts.  
+  2. Quota tells the program what your sales goal is for activations, used for multiplier and activation payouts. 
   3. Acts tells the program how many activations you currently have to date.  
   4. Accy tells the program what you have sold in accessories to date.   
   5. Every variable that can be edited for testing is documented with line comments. 
