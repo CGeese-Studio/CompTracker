@@ -4,11 +4,11 @@
 ### Provides an easy way to track progress, set daily goals and monitor performance.
   1. Relies on user input for all calculations.
   2. Accurate reporting is very important.
-  3. Functionality to lock multiplier at 1.0 for quotas less than ten is working.
+  3. Switch statement locks multiplier at 1.0 for quotas less than 10.0
   4. Now returns difference between current attainment and goal values.
   5. Prints percent to goal based on both Activation and Accessory attainment.
   6. Now accurately rounds results to 2 decimal places.
-  7. Merged declarations and compTracker for a wider range of trackable variables.
+  7. Merged declarations and compTracker into compensation.swift for a wider range of trackable variables.
 
 ---
 ### compensation.swift houses the entire project codebase.  
