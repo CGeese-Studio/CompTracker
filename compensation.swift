@@ -118,13 +118,20 @@ if (quota >= 10) {
 }
 print("Your current activations total \(totalActs), with a compensations value of \(actValue).")
 print("Bringing you \(percentToGoal)% to goal totaling $\(actPayout) towards compensation.")
-// TODO: Add if statement to give remaining activations needed to reach quota / or number of activations over quota
+// Over / under quota statement
+if (actValue < quota) { 
+  print("You are currently \(quota - actValue) activations away from reaching Quota")
+} else { print("you are currently \(actValue - quota) activations over your Quota")
+}
 print("Of those activations your TEP attachment rate is \(tepAttach)%.")
 print("Your current incentive multiplier is \(multiplier).")
 print("Of those activations \(newMix)% are Gross New Adds and \(tabMix)% are tablets.")
 print("You are currently at $\(accy) in accessory sales which is \(accy / accGoal)% to goal.")
 print("Totaling $\(accPayout) towards your compensation.")
-// TODO: Add if statement to give remaining Accy amount to goal / or accy amount over goal
+if (accy < accyGoal) { 
+  print("You are currently $\(accyGoal - accy) away from reaching your Accessory Goal")
+} else { print("You are currently $\(accy - accyGoal) above your Accessory Goal")
+}
 print("Your current APH is $\(aph).")
 if (sps >= 76.0) {
   print("Bassed on your SPS of \(sps), you do not have a 10% decelerated payout.")
