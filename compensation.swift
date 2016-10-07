@@ -121,7 +121,8 @@ print("Bringing you \(percentToGoal)% to goal totaling $\(actPayout) towards com
 // Over / under quota statement
 if (actValue < quota) { 
   print("You are currently \(quota - actValue) activations away from reaching Quota")
-} else { print("you are currently \(actValue - quota) activations over your Quota")
+} else {
+  print("you are currently \(actValue - quota) activations over your Quota")
 }
 print("Of those activations your TEP attachment rate is \(tepAttach)%.")
 print("Your current incentive multiplier is \(multiplier).")
@@ -130,7 +131,8 @@ print("You are currently at $\(accy) in accessory sales which is \(accy / accGoa
 print("Totaling $\(accPayout) towards your compensation.")
 if (accy < accyGoal) { 
   print("You are currently $\(accyGoal - accy) away from reaching your Accessory Goal")
-} else { print("You are currently $\(accy - accyGoal) above your Accessory Goal")
+} else { 
+  print("You are currently $\(accy - accyGoal) above your Accessory Goal")
 }
 print("Your current APH is $\(aph).")
 if (sps >= 76.0) {
