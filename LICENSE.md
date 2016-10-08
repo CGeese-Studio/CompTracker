@@ -11,3 +11,6 @@ This code is meant to be used by individuals for personal reference, it is not i
 I AM employed by the Sprint PCS telecommunications company but do NOT publish this work as company sanctioned material. I have written this software for my own benefit and information. This software is not to be conveyed as an official tool. 
 
 I can NOT be held liable for any damages that may arrise from the use of this software. Use of this software constitutes your agreement with this copyright notice and the warnings contained therein. 
+
+Feel free to contact me (Chris Geese) with any questions, comments, concerns, feedback or suggestions at
+CGeese@Gmail.Com
