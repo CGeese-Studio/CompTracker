@@ -136,6 +136,11 @@ if (accy < accyGoal) { 
   print("You are currently $\(accy - accyGoal) above your Accessory Goal")
 }
 print("Your current APH is $\(aph).")
+print("Your APH Goal is currently $\(aphGoal)")
+if (aph >= aphGoal) {
+  print("Based on your APH you have reqched the $75 per handset average at $\(aph)")
+} else {
+  print("You currently need $\(aphGoal - accy) to reach the $75 per handset goal")
 if (sps >= 76.0) {
   print("Bassed on your SPS of \(sps), you do not have a 10% decelerated payout.")
   print("Your total Gross Payout is $\(grossPayout), after $\(taxPaid) is taken out in taxes you will take home $\(netPayout).")
