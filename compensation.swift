@@ -23,7 +23,7 @@ var tabMix: Double = (tablet / totalActs)
 // Declare variables for TEP attachment
 // Edit tep for testing
 var tep: Double = 0.0
-var tepOpp: Double = totalActs
+var tepOpp: Double = 0.0 // will be incremented within app
 var tepAttach: Double = (tep / tepOpp)
 // Declare variable for accessory sales total
 // Edit accy for testing
