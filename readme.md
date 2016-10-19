@@ -18,7 +18,7 @@ Modifying the starting values of position, quota, acts (each category) and accy 
   2. Quota tells the program what your sales goal is for activations, used for multiplier and activation payouts. 
   3. Acts tells the program how many activations you currently have to date. Broken down into all categories and weighted apropriately for TIC calculations. 
   4. Accy tells the program what you have sold in accessories to date.
-  5. SPS is your self reported SPS score as found in metrics.
+  5. SPS is your self reported SPS score as found in metrics. SPS also acurately applies a 10% decelerator for a score below the 76% threshold.
   6. TEP is enterd as "was there an opportunity?" "Did you attach it?" to figure out true attach rate.
   7. Every variable that can be edited for testing is documented with line comments. 
 	
