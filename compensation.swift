@@ -30,6 +30,7 @@ var tepAttach: Double = (tep / tepOpp)
 var accy: Double = 0.0
 // Declare variable for Accessory Per Handset average
 var aph: Double = (accy / totalActs)
+var aphGoal: Double = (totalActs * 75.00)
 // Declare TIC variables and assignment control flow
 var fullComp: Double = 0.0
 var actTic: Double = 0.0
