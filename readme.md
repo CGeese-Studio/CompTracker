@@ -22,4 +22,6 @@ Modifying the starting values of position, quota, acts (each category) and accy 
   6. TEP is enterd as "was there an opportunity?" "Did you attach it?" to figure out true attach rate.
   7. Every variable that can be edited for testing is documented with line comments. 
 	
----
+---   
+### Added MindMap.md
+MindMap gives a visual representation of the structure of the final application. 
