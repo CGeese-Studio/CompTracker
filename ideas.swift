@@ -1,6 +1,6 @@
 /* a list of potential changes and ideas to consider.
 Considerations
-1. Replace individual activation variables with an ordered dictionary.
+1. Replace individual activation variables with an unordered dictionary.
   a. Arrange as type (string : double).
   b. Data is stored and accessed with a key.
     (string : double).
