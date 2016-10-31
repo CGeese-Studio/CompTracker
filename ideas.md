@@ -13,4 +13,3 @@
       activations.removeValueForKey("tab") // removes the values for "tab"  
       activations["new"] = 3 // replaces the value for "new" with 3  
       activations.updateValue(3, forKey:"new") // same result as above
-2.
