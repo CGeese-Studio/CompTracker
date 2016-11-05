@@ -131,7 +131,7 @@ if (actValue < quota) { 
 }
 print("Of those activations your TEP attachment rate is \(tepAttach)%.")
 print("Your current incentive multiplier is \(multiplier).")
-print("Of those activations \(newMix)% are Gross New Adds and \(tabMix)% are tablets.")
+print("Of those activations \(newMix)% are Gross New Adds, \(upMix)% are upgrades, \(tabMix)% are tablets, \(preMix)% are prepaid, \(spcMix)% are Sprint Phone Connect, \(mbbMix)% are Mobile Broadband.")
 print("You are currently at $\(accy) in accessory sales which is \(accy / accGoal)% to goal.")
 print("Totaling $\(accPayout) towards your compensation.")
 if (accy < accyGoal) { 
