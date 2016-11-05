@@ -17,9 +17,13 @@ var mbb: Double = 0.0
 var totalActs: Double = (newActs + upgrade + tablet + prepaid + spc + mbb)
 var actValue: Double = (newActs) + ((upgrade + tablet + prepaid + spc + mbb) * 0.75)
 var percentToGoal: Double = (actValue / quota)
-// Declare variabes for new activation and tablet percentage
+// Declare variabes for activation type percentage of total
 var newMix: Double = (newActs / totalActs)
+var upMix: Double = (upgrade / totalActs)
 var tabMix: Double = (tablet / totalActs)
+var preMix: Double = (prepaid / totalActs)
+var spcMix: Double = (spc / totalActs)
+var mbbMix: Double = (mbb / totalActs)
 // Declare variables for TEP attachment
 // Edit tep for testing
 var tep: Double = 0.0
