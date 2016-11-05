@@ -113,14 +113,17 @@ if (sps >= 76.0) {
   decelNetPayout = (decelGrossPayout - decelTaxPaid)
 }
 // Add statements to test proper functionality, TODO: add round function for percentages and currencies
+// position and targets
 print("As a(n) \(position), you have a commission target of $\(fullComp).")
 print("Of that target $\(actTic) is comprised of activations and $\(accTic) is comprised of accessory sales.")
 print("You have an accessory sales goal of $\(accGoal).")
+// quota statement
 if (quota >= 10) {
   print("With a quota of \(quota), you are eligible for incentive multipliers.")
 } else {
   print("With a quota of \(quota), you are not eligible for incentive multipliers.")
 }
+// activations count
 print("Your current activations total \(totalActs), with a compensations value of \(actValue).")
 print("Bringing you \(percentToGoal)% to goal totaling $\(actPayout) towards compensation.")
 // Over / under quota statement
@@ -129,22 +132,29 @@ if (actValue < quota) { 
 } else {
   print("you are currently \(actValue - quota) activations over your Quota")
 }
+// tep statements 
 print("Of those activations your TEP attachment rate is \(tepAttach)%.")
+// multiplier
 print("Your current incentive multiplier is \(multiplier).")
+// activation mix statements 
 print("Of those activations \(newMix)% are Gross New Adds, \(upMix)% are upgrades, \(tabMix)% are tablets, \(preMix)% are prepaid, \(spcMix)% are Sprint Phone Connect, \(mbbMix)% are Mobile Broadband.")
+// accessory sales
 print("You are currently at $\(accy) in accessory sales which is \(accy / accGoal)% to goal.")
 print("Totaling $\(accPayout) towards your compensation.")
+// accessory targets
 if (accy < accyGoal) { 
   print("You are currently $\(accyGoal - accy) away from reaching your Accessory Goal")
 } else { 
   print("You are currently $\(accy - accyGoal) above your Accessory Goal")
 }
+// aph statements
 print("Your current APH is $\(aph).")
 print("Your APH Goal is currently $\(aphGoal)")
 if (aph >= aphGoal) {
   print("Based on your APH you have reqched the $75 per handset average at $\(aph)")
 } else {
   print("You currently need $\(aphGoal - accy) to reach the $75 per handset goal")
+// sps statements
 if (sps >= 76.0) {
   print("Bassed on your SPS of \(sps), you do not have a 10% decelerated payout.")
   print("Your total Gross Payout is $\(grossPayout), after $\(taxPaid) is taken out in taxes you will take home $\(netPayout).")
