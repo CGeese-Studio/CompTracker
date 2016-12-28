@@ -1,10 +1,13 @@
 // SEARCH THE WORD EDIT TO FIND ALL VALUES USED FOR TESTING, DO NOT MODIFY ANYTHING THAT ISNT COMMENTED AS "EDIT FOR TESTING"
 // Import Foundation for function support
+
 import Foundation
+
 // Declare position and quota
 // Edit position and quota for testing
 var position: String = ""
 var quota: Double = 0.0
+
 // Declare variables for each activation type
 // Edit all activations for testing
 var newActs: Double = 0.0
@@ -13,24 +16,30 @@ var tablet: Double = 0.0
 var prepaid: Double = 0.0
 var spc: Double = 0.0
 var mbb: Double = 0.0
+
 // Declare variables for total activation count, values and percent to goal
 var totalActs: Double = (newActs + upgrade + tablet + prepaid + spc + mbb)
 var actValue: Double = (newActs) + ((upgrade + tablet + prepaid + spc + mbb) * 0.75)
 var percentToGoal: Double = (actValue / quota)
+
 // Declare variabes for new activation and tablet percentage
 var newMix: Double = (newActs / totalActs)
 var tabMix: Double = (tablet / totalActs)
+
 // Declare variables for TEP attachment
 // Edit tep for testing
 var tep: Double = 0.0
 var tepOpp: Double = 0.0 // will be incremented within app
 var tepAttach: Double = (tep / tepOpp)
+
 // Declare variable for accessory sales total
 // Edit accy for testing
 var accy: Double = 0.0
+
 // Declare variable for Accessory Per Handset average
 var aph: Double = (accy / totalActs)
 var aphGoal: Double = (totalActs * 75.00)
+
 // Declare TIC variables and assignment control flow
 var fullComp: Double = 0.0
 var actTic: Double = 0.0
@@ -54,6 +63,7 @@ if position == "LRC" {
 } else {
   print("Please enter a valid value.")
 }
+
 // Declare variables and control flow for multiplier assignment, multiplier locked at 1.0 if quota < 10
 var multiplier: Double = 0.0
 if (quota >= 10.0){
@@ -85,13 +95,16 @@ if (quota >= 10.0){
       multiplier = 0.0
   }
 }
+
 // Declare variable for Sprint Promoter Score
 // Edit sps for testing
 var sps: Double = 0.0
+
 // Declare variables for taxes and payouts accounting for SPS 10% decelerator
 var actPayout: Double = (actTic * percentToGoal * multiplier)
 var accPayout: Double = (accy * 0.06)
 var tax: Double = 0.34
+
 // SPS contengient payouts
 var grossPayout: Double = 0.0
 var taxPaid: Double = 0.0
@@ -108,6 +121,7 @@ if (sps >= 76.0) {
   decelTaxPaid = (decelGrossPayout * tax)
   decelNetPayout = (decelGrossPayout - decelTaxPaid)
 }
+
 // Add statements to test proper functionality, TODO: add round function for percentages and currencies
 print("As a(n) \(position), you have a commission target of $\(fullComp).")
 print("Of that target $\(actTic) is comprised of activations and $\(accTic) is comprised of accessory sales.")
@@ -119,6 +133,7 @@ if (quota >= 10) {
 }
 print("Your current activations total \(totalActs), with a compensations value of \(actValue).")
 print("Bringing you \(percentToGoal)% to goal totaling $\(actPayout) towards compensation.")
+
 // Over / under quota statement
 if (actValue < quota) { 
   print("You are currently \(quota - actValue) activations away from reaching Quota")
