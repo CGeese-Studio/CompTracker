@@ -1,0 +1,8 @@
+// Implements the position logic with arrays
+
+// Possible positions: LRC, FTRC, PTRC
+
+var position: String = ""
+
+
+
